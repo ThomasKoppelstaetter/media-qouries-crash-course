@@ -45,3 +45,29 @@ h1 {
     html, body { background: purple; }
     h1.xxl { display: block; }
 }
+
+@media (orientation: portrait) {
+    h1.portrait { display: block; }
+}
+
+@media (orientation: landscape) {
+    h1.landscape { display: block; }
+}
+
+@media print {
+    /* Hintergrund und Schriftfarbe für Druck */
+    html, body {
+        background: white !important;
+        color: black !important;
+    }
+
+    /* Nur large einblenden */
+    body * {display: none !important;}
+    .lg { display: block !important;}
+
+
+    /* Alle Bilder ausblenden */
+    img { display: none !important; }
+}
+
+    
