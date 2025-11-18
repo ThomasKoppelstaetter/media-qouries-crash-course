@@ -1,5 +1,47 @@
-html, body{
+html, body {
     width: 100%;
     height: 100%;
-    background-color: green;
+    margin: 0;
+}
+
+/* Alle h1 erst mal ausblenden */
+h1 {
+    display: none;
+    margin: 20px;
+}
+
+/* Extra small: <576px */
+@media (max-width: 575.98px) {
+    html, body { background: red; }
+    h1.xs { display: block; }
+}
+
+/* Small: ≥576px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html, body { background: orange; }
+    h1.sm { display: block; }
+}
+
+/* Medium: ≥768px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html, body { background: yellow; }
+    h1.md { display: block; }
+}
+
+/* Large: ≥992px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    html, body { background: green; }
+    h1.lg { display: block; }
+}
+
+/* Extra large: ≥1200px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    html, body { background: blue; }
+    h1.xl { display: block; }
+}
+
+/* Extra extra large: ≥1400px */
+@media (min-width: 1400px) {
+    html, body { background: purple; }
+    h1.xxl { display: block; }
 }
